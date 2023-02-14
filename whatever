@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Information Input Form</title>
+  </head>
+  <body>
+    <h2>Enter Information:</h2>
+    <form>
+      <p>Column 1: <input type="text" id="column1"></p>
+      <p>Column 2: <input type="text" id="column2"></p>
+      <button onclick="storeInformation()">Submit</button>
+    </form>
+    <p id="output"></p>
+  </body>
+  <script>
+    function storeInformation() {
+      var column1 = document.getElementById("column1").value;
+      var column2 = document.getElementById("column2").value;
+      document.getElementById("output").innerHTML = "Column 1: " + column1 + "<br>Column 2: " + column2;
+    }
+  </script>
+</html>
